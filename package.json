@@ -1,0 +1,24 @@
+{
+  "name": "AppHercules",
+  "version": "1.0.0",
+  "description": "",
+  "main": "App.js",
+  "scripts": {
+    "start":"parallelshell \"npm run server\" \"npm run vigilar\"",    
+    "vigilar":"nodemon -e scss -x \"sass scss:css\"",
+    "server":"http-server ..\"",
+    "sass":"sass scss:css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rocket-pocket/App-Hercules.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rocket-pocket/App-Hercules/issues"
+  },
+  "homepage": "https://github.com/rocket-pocket/App-Hercules#readme"
+}
