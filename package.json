@@ -4,10 +4,10 @@
   "description": "",
   "main": "App.js",
   "scripts": {
-    "start":"parallelshell \"npm run server\" \"npm run vigilar\"",    
-    "vigilar":"nodemon -e scss -x \"sass scss:css\"",
-    "server":"http-server ..\"",
-    "sass":"sass scss:css",
+    "start": "parallelshell \"npm run server\" \"npm run vigilar\"",
+    "vigilar": "nodemon -e scss -x \"sass scss:css\"",
+    "server": "http-server ..\"",
+    "sass": "sass scss:css",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/rocket-pocket/App-Hercules/issues"
   },
-  "homepage": "https://github.com/rocket-pocket/App-Hercules#readme"
+  "homepage": "https://github.com/rocket-pocket/App-Hercules#readme",
+  "dependencies": {
+    "bootstrap": "^4.1.3"
+  }
 }
