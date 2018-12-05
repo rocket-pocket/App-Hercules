@@ -31,35 +31,46 @@ export class Main{
         this.btnFacturas.addEventListener('click', this.mostrarfacturas.bind(this))
         this.btnAlquiler.addEventListener('click', this.mostrarAlquiler.bind(this))
         /* input handlers */
-        this.btnAddCompras.addEventListener('click', this.recoger.bind(this))
+        this.btnAddCompras.addEventListener('click', this.enviarDataCompras.bind(this))
         //declaramos una variable y le asignamos el valor que se recoge de parametro
     }
 
     mostrarCompras(){
        this.hidden1.classList.toggle('hidden-1')
+       this.hidden2.classList.add('hidden-2')
+       this.hidden3.classList.add('hidden-3')
     }
     mostrarfacturas(){
-        this.hidden2.classList.toggle('hidden-2') 
+        this.hidden2.classList.toggle('hidden-2')
+        this.hidden1.classList.add('hidden-1')
+        this.hidden3.classList.add('hidden-3') 
     }
     mostrarAlquiler(){
         this.hidden3.classList.toggle('hidden-3')
+        this.hidden1.classList.add('hidden-1')
+        this.hidden2.classList.add('hidden-2')
     }
     enviarDataCompras(){
-        if(this.inputProductoCompras.value == ''){
+        let valorProductos = this.inputProductoCompras.value
+        valorProductos = ['']
+        for (let index = 0; index < valorProductos.length; index++) {
+            const element = valorProductos[index];
+            if(valorProductos){
+                this.outputCompras.innerHTML += `hola ${valorProductos['']}`
+            }
+            else{
+                element == ['']
+                this.outputCompras.innerHTML =  `<p> hey ${element}</p>`
+            }
+            console.log(valorProductos)
+        }
+
+        /* if(valorProductos == ''){
             this.outputCompras.innerHTML = `<p>Por favor introduce un producto</p>`
         }
         else{
-            this.inputProductoCompras.value
+            valorProductos
             this.outputCompras.innerHTML =  `<p> ${this.inputProductoCompras.value}</p>`
-        }
-    }
-    recoger(){
-        let valor_recivido = this.inputProductoCompras.value
-        let array = [valor_recivido] ;
-
-        for ( i = 0; i < array.length; i++) {
-            var resultado = array[i]; 
-        }
-        resultado.innerHTML += valor + "<br>"
+        } */
     }
 }
