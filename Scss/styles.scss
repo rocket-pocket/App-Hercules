@@ -14,6 +14,10 @@ body{
 }
 .btn-acceder{
     margin-top: 2rem;
+    padding: .2rem
+}
+.btn{
+    padding: .2rem;
 }
 .icons{
     margin-top: 2rem;
@@ -24,7 +28,7 @@ body{
     color: #f06292
 }
 .btn-icons{
-    margin-top: 1rem;
+    margin-top: .5rem;
     margin-bottom: 3rem;
     position: relative;
     width: 100%;
@@ -46,6 +50,12 @@ footer{
     height: 4rem;
     background: rgb(228, 227, 227);
 }
-.hidden-1{
+.display{
+    display: initial;
+}
+.hidden-1, .hidden-2, .hidden-3{
     display: none;
+}
+.output{
+    margin-top: 1rem;
 }

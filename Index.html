@@ -49,53 +49,62 @@
                             <div class="ico-shopping"><i class="fas fa-home"></i></div>
                         </div>
                         <div class="btn-icons">
-                            <button type="button" class="btn btn-info">Compras</button>
-                            <button type="button" class="btn btn-info">Facturas</button>
-                            <button type="button" class="btn btn-info">Alquiler</button>
+                            <button type="button" class="btn btn-info btn-compras">Compras</button>
+                            <button type="button" class="btn btn-info btn-facturas">Facturas</button>
+                            <button type="button" class="btn btn-info btn-alquiler">Alquiler</button>
                         </div>           
                     </div>
                 </div>
             </div>
         </section>
         <section class="section-3">
+            <div class="container hidden-1 display">
             <div class="section-line"></div>
-            <div class="container hidden-1">
                 <div class="row justify-content-center">
                     <div class="col-6 ">
+                        <h3>Compras</h3>
                         <div class="form-group text-center">
                             <label for=""></label>
-                            <input type="text" class="form-control" name="" id="" aria-describedby="helpId" placeholder="Producto">
+                            <input type="text" class="form-control" name="input-producto" id="input-producto-compras" aria-describedby="helpId" placeholder="Producto">
                             <label for=""></label>
-                            <input type="text" class="form-control" name="" id="" aria-describedby="helpId" placeholder="Cantidad">
-                            <button type="button" class="btn btn-info btn-add">Añadir</button>
+                            <input type="text" class="form-control" name="input-cantidad-compras" id="input-cantidad-compras" aria-describedby="helpId" placeholder="Cantidad">
+                            <button type="button" class="btn btn-info btn-add" id="btn-add-compras">Añadir</button>
+                            <div class="output output-container-1">
+                            </div>
                         </div>
                     </div>                    
                 </div>
             </div>
+            <div class="container hidden-2 display">
             <div class="section-line"></div>
-            <div class="container hidden-2">
                 <div class="row justify-content-center">
                     <div class="col-6 ">
+                        <h3>Facturas</h3>
                         <div class="form-group text-center">
                             <label for=""></label>
-                            <input type="text" class="form-control" name="" id="" aria-describedby="helpId" placeholder="Producto">
+                            <input type="text" class="form-control" name="input-producto-facturas" id="input-producto-facturas" aria-describedby="helpId" placeholder="Producto">
                             <label for=""></label>
-                            <input type="text" class="form-control" name="" id="" aria-describedby="helpId" placeholder="Cantidad">
-                            <button type="button" class="btn btn-info btn-add">Añadir</button>
+                            <input type="text" class="form-control" name="input-cantidad-facturas" id="input-cantidad-facturas" aria-describedby="helpId" placeholder="Cantidad">
+                            <button type="button" class="btn btn-info btn-add" id="btn-add-facturas">Añadir</button>
+                            <div class="output output-container-2">
+                            </div>
                         </div>
                     </div>                    
                 </div>
             </div>
+            <div class="container hidden-3 display">
             <div class="section-line"></div>
-            <div class="container hidden-3">
                 <div class="row justify-content-center">
                     <div class="col-6 ">
+                        <h3>Alquiler</h3>
                         <div class="form-group text-center">
                             <label for=""></label>
-                            <input type="text" class="form-control" name="" id="" aria-describedby="helpId" placeholder="Producto">
+                            <input type="text" class="form-control" name="input-producto-alquiler" id="input-producto-alquiler" aria-describedby="helpId" placeholder="Producto">
                             <label for=""></label>
-                            <input type="text" class="form-control" name="" id="" aria-describedby="helpId" placeholder="Cantidad">
-                            <button type="button" class="btn btn-info btn-add">Añadir</button>
+                            <input type="text" class="form-control" name="input-cantidad-alquiler" id="input-cantidad-alquiler" aria-describedby="helpId" placeholder="Cantidad">
+                            <button type="button" class="btn btn-info btn-add" id="btn-add-alquiler">Añadir</button>
+                            <div class="output output-container-3">
+                            </div>
                         </div>
                     </div>                    
                 </div>
@@ -106,10 +115,9 @@
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-xs|sm|md|lg|xl-1-12">
-                        <button type="button" class="btn btn-danger">Sumar</button>
-                        <input type="text" class="form-control input-resultado" name="" id="" aria-describedby="helpId" placeholder="Resultado">
-                    </div>
-                    
+                        <button type="button" class="btn btn-danger" id="btn-sumar-total">Sumar</button>
+                        <input type="text" class="form-control input-resultado" name="input-sumar" id="input-sumar" aria-describedby="helpId" placeholder="Resultado">
+                    </div>                    
                 </div>
             </div>
         </section>     
@@ -117,7 +125,7 @@
     <footer>
         <div class="container">
             <div class="row">
-                <div class="col-xs|sm|md|lg|xl-1-12">
+                <div class="col-8">
                     <p class="parrafo-pie">App Hércules &copy; 2018</p>
                 </div>                
             </div>
