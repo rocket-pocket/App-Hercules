@@ -2,9 +2,11 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>App HErcules</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" href="./reset.css">
     <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
     <link rel="stylesheet" href="./css/styles.css">
     <script src="./App.js/Index.js" type="module"></script>
@@ -19,66 +21,107 @@
         </div>
     </header>
     <main>
-        <div class="container">
-            <div class="col-12">
-                <div class="row-4">
-                    <div class="form-group">
-                      <label for="name">nombre</label>  
-                      <input type="text" class="form-control" name="name" id="name" placeholder="Nombre" required>
-                      <label for="pass">Password</label>
-                      <input type="password" class="form-control" name="pass" id="pass" placeholder="Password" required>
-                      <input name="input" id="input" class="btn btn-success" type="button" value="Acceder">
+        <section class="section-1">
+            <div class="section-line"></div>
+            <div class="container">
+                <div class="col-12">
+                    <div class="row-4">
+                        <div class="form-group">
+                            <label for="name">Nombre</label>
+                            <input type="text" class="form-control" name="name" id="name" placeholder="Nombre" required>
+                            <label for="pass">Password</label>
+                            <input type="password" class="form-control" name="pass" id="pass" placeholder="Password" required>
+                            <input name="input" id="input" class="btn btn-info btn-acceder " type="button" value="Acceder">
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="container">
-            <div class="col-12 text-center">
-                <h2>¿QUÉ QUIERES HACER?</h2>
-                <div class="row-12 text-center">
-                    <button type="button" class="btn btn-info">Compras</button>
-                    <button type="button" class="btn btn-info">Facturas</button>
-                    <button type="button" class="btn btn-info">Alquiler</button>
+        </section>
+        <section class="section-2">
+            <div class="section-line"></div>
+            <div class="container">
+                <div class="col-12 text-center">
+                    <h2>¿QUÉ QUIERES HACER?</h2>
+                    <div class="row-12 text-center">
+                        <div class="icons">
+                            <div class="ico-shopping"><i class="fas fa-shopping-cart"></i></div>
+                            <div class="ico-shopping"><i class="fas fa-file-invoice-dollar"></i></div>
+                            <div class="ico-shopping"><i class="fas fa-home"></i></div>
+                        </div>
+                        <div class="btn-icons">
+                            <button type="button" class="btn btn-info">Compras</button>
+                            <button type="button" class="btn btn-info">Facturas</button>
+                            <button type="button" class="btn btn-info">Alquiler</button>
+                        </div>           
+                    </div>
                 </div>
             </div>
-        </div>
+        </section>
+        <section class="section-3">
+            <div class="section-line"></div>
+            <div class="container hidden-1">
+                <div class="row justify-content-center">
+                    <div class="col-6 ">
+                        <div class="form-group text-center">
+                            <label for=""></label>
+                            <input type="text" class="form-control" name="" id="" aria-describedby="helpId" placeholder="Producto">
+                            <label for=""></label>
+                            <input type="text" class="form-control" name="" id="" aria-describedby="helpId" placeholder="Cantidad">
+                            <button type="button" class="btn btn-info btn-add">Añadir</button>
+                        </div>
+                    </div>                    
+                </div>
+            </div>
+            <div class="section-line"></div>
+            <div class="container hidden-2">
+                <div class="row justify-content-center">
+                    <div class="col-6 ">
+                        <div class="form-group text-center">
+                            <label for=""></label>
+                            <input type="text" class="form-control" name="" id="" aria-describedby="helpId" placeholder="Producto">
+                            <label for=""></label>
+                            <input type="text" class="form-control" name="" id="" aria-describedby="helpId" placeholder="Cantidad">
+                            <button type="button" class="btn btn-info btn-add">Añadir</button>
+                        </div>
+                    </div>                    
+                </div>
+            </div>
+            <div class="section-line"></div>
+            <div class="container hidden-3">
+                <div class="row justify-content-center">
+                    <div class="col-6 ">
+                        <div class="form-group text-center">
+                            <label for=""></label>
+                            <input type="text" class="form-control" name="" id="" aria-describedby="helpId" placeholder="Producto">
+                            <label for=""></label>
+                            <input type="text" class="form-control" name="" id="" aria-describedby="helpId" placeholder="Cantidad">
+                            <button type="button" class="btn btn-info btn-add">Añadir</button>
+                        </div>
+                    </div>                    
+                </div>
+            </div>
+        </section>
+        <section class="section-4">
+            <div class="section-line"></div>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-xs|sm|md|lg|xl-1-12">
+                        <button type="button" class="btn btn-danger">Sumar</button>
+                        <input type="text" class="form-control input-resultado" name="" id="" aria-describedby="helpId" placeholder="Resultado">
+                    </div>
+                    
+                </div>
+            </div>
+        </section>     
+    </main>
+    <footer>
         <div class="container">
             <div class="row">
                 <div class="col-xs|sm|md|lg|xl-1-12">
-                    <div class="container">
-                        <form>
-                            <div class="form-group row">
-                                <label for="inputName" class="col-sm-1-12 col-form-label"></label>
-                                <div class="col-sm-1-12">
-                                    <input type="text|password|email|number|submit|date|datetime|datetime-local|month|color|range|search|tel|time|url|week" class="form-control" name="inputName" id="inputName" placeholder="Producto">
-                                </div>
-                            </div>
-                            <div class="form-group row">
-                                    <label for="inputName" class="col-sm-1-12 col-form-label"></label>
-                                    <div class="col-sm-1-12">
-                                        <input type="text|password|email|number|submit|date|datetime|datetime-local|month|color|range|search|tel|time|url|week" class="form-control" name="inputName" id="inputName" placeholder="Cantidad">
-                                    </div>
-                                </div>
-                            <fieldset class="form-group row">
-                                <legend class="col-form-legend col-sm-1-12">Group name</legend>
-                                <div class="col-sm-1-12">
-                                    
-                                </div>
-                            </fieldset>
-                            <div class="form-group row">
-                                <div class="offset-sm-2 col-sm-10">
-                                    <button type="submit" class="btn btn-primary">Action</button>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-                
+                    <p class="parrafo-pie">App Hércules &copy; 2018</p>
+                </div>                
             </div>
         </div>
-    </main>
-    <footer>
-
     </footer>
 </body>
 </html>

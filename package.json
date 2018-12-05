@@ -6,7 +6,7 @@
   "scripts": {
     "start": "parallelshell \"npm run server\" \"npm run vigilar\"",
     "vigilar": "nodemon -e scss -x \"sass scss:css\"",
-    "server": "http-server ..\"",
+    "server": "http-server\"",
     "sass": "sass scss:css",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -23,5 +23,8 @@
   "homepage": "https://github.com/rocket-pocket/App-Hercules#readme",
   "dependencies": {
     "bootstrap": "^4.1.3"
+  },
+  "devDependencies": {
+    "parallelshell": "^3.0.2"
   }
 }
