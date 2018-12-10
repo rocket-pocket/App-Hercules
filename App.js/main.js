@@ -53,16 +53,18 @@ export class Main{
     enviarDataCompras(){
         let valorProductos = this.inputProductoCompras.value
         valorProductos = ['']
+        valorProductos.push()
+        console.log(valorProductos)
         for (let index = 0; index < valorProductos.length; index++) {
             const element = valorProductos[index];
             if(valorProductos){
-                this.outputCompras.innerHTML += `hola ${valorProductos['']}`
+                this.outputCompras.innerHTML += `hola ${valorProductos.value['']}`
             }
             else{
-                element == ['']
-                this.outputCompras.innerHTML =  `<p> hey ${element}</p>`
+                valorProductos == ['']
+                this.outputCompras.innerHTML =  `<p> hey ${valorProductos.value}</p>`
             }
-            console.log(valorProductos)
+            console.log(valorProductos.value)
         }
 
         /* if(valorProductos == ''){
